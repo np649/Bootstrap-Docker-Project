@@ -51,30 +51,9 @@
     </div>
   
     
-    <table>
-        <thead>
-            <tr>
-                <th>Value 1</th>
-                <th>Value 2</th>
-                <th>Operation</th>
-                <th>Results</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for item in result_long %}
-            
-            <tr>
-                <td>{{item[0]}}</td>
-                <td>{{item[1]}}</td>
-                <td>{{item[2]}}</td>
-                <td>{{item[3]}}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
     <h1>Result</h1>
-    <strong>Value 1: </strong> {{ value_a }} <br>
-    <strong>Value 2: </strong> {{ value_b }} <br>
+    <strong>Value 1: </strong> {{ value1 }} <br>
+    <strong>Value 2: </strong> {{ value2 }} <br>
     <strong>Operation: </strong> {{ operation }} <br>
     <strong>Result: </strong> {{ result }}
     

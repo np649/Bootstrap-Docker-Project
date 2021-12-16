@@ -1,0 +1,102 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">Home</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="AAA.html">AAA Testing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calc.html">Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="design.html">Design Patterns Used</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calculator.html">Working Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="result.html">Results</a>
+                    </li>
+                    
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+  
+    <table>
+        <thead>
+            <tr>
+                <th>Value 1</th>
+                <th>Value 2</th>
+                <th>Operation</th>
+                <th>Results</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in result_long %}
+            
+            <tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h1>Result</h1>
+    <strong>Value 1: </strong> {{ value_a }} <br>
+    <strong>Value 2: </strong> {{ value_b }} <br>
+    <strong>Operation: </strong> {{ operation }} <br>
+    <strong>Result: </strong> {{ result }}
+    
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; Neal Patel, 2020 |  Terms Of Use  |  Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+  

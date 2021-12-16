@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important {
+            color: #336699;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+
+    <h1>My Calculator</h1>
+     {% if error %}
+         <div class="alert alert-danger error" role="alert">
+             {{ error }}
+        </div>
+      {% endif %}
+  <div class="mb-3 row">
+
+    <form action="/calculator" method="POST">
+        <label for="value_a" class="col-sm-2 col-form-label">Value 1:</label><br>
+        <input type="text" id="value_a" name="value_a" value="1"><br>
+        <label for="value_b" class="col-sm-2 col-form-label">Value 2:</label><br>
+        <input type="text" id="value_b" name="value_b" value="2"><br>
+        <fieldset>
+        <legend>Operation</legend>
+          <div>
+            <input type="radio" name="operation" id="addition" value="addition" checked>
+            <label for="addition">Addition</label>
+          </div>
+          <div>
+            <input type="radio" name="operation" id="subtraction" value="subtraction">
+            <label for="subtraction">Subtraction</label>
+          </div>
+          <div>
+            <input type="radio" name="operation" id="multiplication" value="multiplication">
+            <label for="multiplication">Multiplication</label>
+          </div>
+          <div>
+            <input type="radio" name="operation" id="division" value="division">
+            <label for="division">Division</label>
+          </div>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style>
+        .important { color: #336699; }
+    
+        .content {
+            max-width: 500px;
+            margin: auto; }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1 text-align="center">Welcome to my Calculator</h1>
+    <p class="important">
+        <img src="https://images.pexels.com/photos/5184951/pexels-photo-5184951.jpeg?cs=srgb&dl=pexels-cottonbro-5184951.jpg&fm=jpg"
+        width="400" height="400" float="center">
+    </p>
+    <p>
+        Navigate to the Calculation Tab to solve any equation using addition, subtraction, multiplication, or division. Your results will show in a table.
+    </p> 
+    <p>
+        You can also navigate to Pages 1 - 4 to learn about the internet history and some programming concepts.
+    </p>         
+{% endblock %}

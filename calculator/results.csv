@@ -1,0 +1,11 @@
+val1,val2,opperation,result
+1,2,addition,3.0
+1,2,subtraction,-1.0
+1,2,multiplication,2.0
+1,2,division,0.5
+1,0,division,
+1,2,addition,3.0
+1,2,subtraction,-1.0
+1,2,multiplication,2.0
+1,2,division,0.5
+1,0,division,NaN
